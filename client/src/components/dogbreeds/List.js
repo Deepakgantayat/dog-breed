@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import axios from "../../config/axios"
+import dog from "../../config/dog"
 
 class ListBreeds extends React.Component{
     constructor(props){
@@ -12,7 +13,7 @@ class ListBreeds extends React.Component{
         }
     }
     componentDidMount(){
-        axios.get('https://dog.ceo/api/breeds/list/all')
+        dog.get('/breeds/list/all')
         .then((response) =>{
             let allbreeds = response.data.message
             
