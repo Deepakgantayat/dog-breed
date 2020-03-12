@@ -32,23 +32,23 @@ class Register extends React.Component{
                 <div className="col-md-6">
                     <br/>
                     <br/>
-                {/* <img src="https://images-na.ssl-images-amazon.com/images/I/81nia28xsOL._SX425_.jpg" className="rounded mx-auto d-block"  alt="Responsive"></img> */}
+                    <img class="card-img" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1689,w_3000,x_0,y_404/f_auto,q_auto,w_1100/v1563809078/shape/mentalfloss/28865-gettyimages-500694766.jpg" alt="responsive image"/>
                 </div>
                 <div className="col-md-6">
                     <br/>
-                <h2>Register</h2>
+                <h2 style={{color: "black"}}>Register</h2>
                 <form onSubmit = {this.handleSubmit}>
                 <div className="form-group">
-                    <label> Username </label>
-                    <input type = "text" value={this.state.username} onChange={this.handleChange} name="username" className="form-control"/>
+                    <label style={{color: "black"}}> Username </label>
+                    <input type = "text" value={this.state.username} onChange={this.handleChange} name="username" placeholder="username" className="form-control"/>
                     </div>
                 <div className="form-group">
-                    <label> Email </label>
-                    <input type = "text" value={this.state.email} onChange={this.handleChange} name="email" className="form-control"/>
+                    <label style={{color: "black"}}> Email </label>
+                    <input type = "text" value={this.state.email} onChange={this.handleChange} name="email" placeholder = "email" className="form-control"/>
                     </div>
                     <div className="form-group">
-                    <label> Password </label>
-                    <input type = "password" value={this.state.password} onChange={this.handleChange} name="password" className="form-control"/>
+                    <label style={{color: "black"}}> Password </label>
+                    <input type = "password" value={this.state.password} onChange={this.handleChange} name="password" placeholder = "password" className="form-control"/>
                     </div>
                     
                     <input type ="submit" className="btn btn-primary btn-lg btn-block"/>      

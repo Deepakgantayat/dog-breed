@@ -35,20 +35,21 @@ class Login extends React.Component{
                 <div className="col-md-6">
                     <br/>
                     <br/>
+                    <img class="card-img" src="https://images2.minutemediacdn.com/image/upload/c_crop,h_1689,w_3000,x_0,y_404/f_auto,q_auto,w_1100/v1563809078/shape/mentalfloss/28865-gettyimages-500694766.jpg" alt="responsive image"/>
                 </div>
                 <div className="col-md-6">
                     <br/>
-                <h2>Login</h2>
+                <h2 style={{color: "black"}}>Login</h2>
                 <form onSubmit = {this.handleSubmit}>
                 <div className="form-group">                        
-                    <label> Email </label>
+                    <label style={{color: "black"}}> Email </label>
                     <input type = "text" value={this.state.email} onChange={this.handleChange} name="email" placeholder="email"className="form-control"/>
                     <div style={{color:"red"}}>{this.state.emailError}</div> 
                     </div>
                    
                     <div className="form-group">
                    
-                    <label> Password </label>
+                    <label style={{color: "black"}}> Password </label>
                     <input type = "password" value={this.state.password} onChange={this.handleChange} placeholder="Password" name="password" className="form-control"/>
                     <div style={{color:"red"}}>{this.state.passwordError}</div> 
                     </div>
